@@ -8,7 +8,7 @@ To Pass The Probation Period In DIO Successfully
 - Study Auto Layout and Responsive UIs
 
 #### WED/OCT/14
-- Complete [Auto Layout and Responsive UIs Challenge](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Calculator-Layout-iOS13-master)
+##### - Complete [Auto Layout and Responsive UIs Challenge](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Calculator-Layout-iOS13-master)
   - Calculator Layout
     - How to add constraints and understanding how Auto Layout works.
     - How to Pin and Align elements.
@@ -21,17 +21,21 @@ To Pass The Probation Period In DIO Successfully
       <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/portrait.png" width="30%" height="30%" alt="portrait"></img><br/>
 
      - Landscape  
-      <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/landscape.png" width="70%" height="70%" alt="landscape"></img><br/>
+      <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/landscape.png" width="70%" height="70%" alt="landscape"></img><br/>   
       
-- Complete [Using and Understanding Apple Documentation](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Xylophone-iOS13-master)
- - Xylophone Project
-    - How to play sound using AVFoundation and AVAudioPlayer.
-    - Understand Apple documentation and how to use StackOverflow.
-    - Functions and methods in Swift.
-    - Data types.
-    - Swift loops.
-    - Variable scope.
-    - The ViewController lifecycle.
-    - Error handling in Swift.
-    - Code refactoring.
-    - Basic debugging.
+      
+         
+         
+      
+##### - Complete [Using and Understanding Apple Documentation](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Xylophone-iOS13-master)
+  - Xylophone Project
+     - How to play sound using AVFoundation and AVAudioPlayer.
+     - Understand Apple documentation and how to use StackOverflow.
+     - Functions and methods in Swift.
+     - Data types.
+     - Swift loops.
+     - Variable scope.
+     - The ViewController lifecycle.
+     - Error handling in Swift.
+     - Code refactoring.
+     - Basic debugging.
