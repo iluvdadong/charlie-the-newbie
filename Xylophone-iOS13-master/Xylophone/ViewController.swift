@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     // Create a new AVAudioPlayer
     var player: AVAudioPlayer!
-    var pressedButton: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +20,18 @@ class ViewController: UIViewController {
     
     @IBAction func keyPressed(_ sender: UIButton) {
         
-        pressedButton = sender.currentTitle
-        playSound()
+        print("Start")
+        playSound(sender.currentTitle!)
+        sender.alpha = 0.5
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            sender.alpha = 1
+        }
     }
     
-    func playSound() {
+    func playSound(_ soundName: String) {
         // Set our URL to be the location of our C.wav sound file in out project
-        let url = Bundle.main.url(forResource: pressedButton, withExtension: "wav")
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
         
         // Put this sound file into our player
         player = try! AVAudioPlayer(contentsOf: url!)
