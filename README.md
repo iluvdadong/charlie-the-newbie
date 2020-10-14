@@ -9,4 +9,12 @@ To Pass The Probation Period In DIO Successfully
 
 #### WED/OCT/14
 - Complete [Auto Layout and Responsive UIs Challenge](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Calculator-Layout-iOS13-master)
+  - Calculator Layout
 
+  Portrait  
+
+  <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/portrait.png" width="30%" height="30%" alt="portrait"></img><br/>
+
+  Landscape  
+
+  <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/landscape.png" width="70%" height="70%" alt="landscape"></img><br/>
