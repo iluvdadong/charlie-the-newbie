@@ -8,7 +8,7 @@ To Pass The Probation Period In DIO Successfully
 - Study Auto Layout and Responsive UIs
 
 #### WED/OCT/14
-##### - Complete [Auto Layout and Responsive UIs Challenge](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Calculator-Layout-iOS13-master)
+#### - Complete [Auto Layout and Responsive UIs Challenge](https://github.com/iluvdadong/charlie-the-newbie/tree/master/Calculator-Layout-iOS13-master)
   - Calculator Layout
     - How to add constraints and understanding how Auto Layout works.
     - How to Pin and Align elements.
@@ -16,18 +16,8 @@ To Pass The Probation Period In DIO Successfully
     - How to debug auto layout errors.
     - Understanding what Xcode needs in order to correctly layout a design.
     - How to use Stack Views to create complex interfaces.
-
-    - Portrait   
-      <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/portrait.png" width="30%" height="30%" alt="portrait"></img><br/>
-
-     - Landscape  
-      <img src="https://github.com/iluvdadong/charlie-the-newbie/blob/main/Calculator-Layout-iOS13-master/Calculator%20Layout%20iOS13/Result/landscape.png" width="70%" height="70%" alt="landscape"></img><br/>   
-      
-      
-         
-         
-      
-##### - Complete [Using and Understanding Apple Documentation](https://github.com/iluvdadong/charlie-the-newbie/tree/main/Xylophone-iOS13-master)
+            
+#### - Complete [Using and Understanding Apple Documentation](https://github.com/iluvdadong/charlie-the-newbie/tree/master/Xylophone-iOS13-masterr)
   - Xylophone Project
      - How to play sound using AVFoundation and AVAudioPlayer.
      - Understand Apple documentation and how to use StackOverflow.
@@ -39,3 +29,16 @@ To Pass The Probation Period In DIO Successfully
      - Error handling in Swift.
      - Code refactoring.
      - Basic debugging.
+
+#### THU/OCT/15
+#### - Complete [Intermediate Swift Programming - Control Flow and Optionals](https://github.com/iluvdadong/charlie-the-newbie/tree/master/EggTimer-iOS13-master)
+   - Swift Collection types - Dictionaries
+   - The Swift Timer API
+   - Conditional statements - IF/ELSE
+   - Conditional statements - Switch
+   - Functions with outputs
+   - How to use the ProgressView
+    
+#### FRI/OCT/16
+#### - [1] [Study W/David](https://app.slack.com/docs/TM8RYJG4T/F01CMSAEA02)
+   - [GraphQL Excercise](https://github.com/iluvdadong/charlie-the-newbie/tree/master/movieql)
