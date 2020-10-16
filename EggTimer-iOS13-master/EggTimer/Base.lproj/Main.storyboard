@@ -120,6 +120,19 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.5" width="374" height="246.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="1oa-As-e3g">
+                                                <rect key="frame" x="20" y="122.5" width="334" height="2.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1oa-As-e3g" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="FI5-Wr-ot2"/>
+                                            <constraint firstItem="1oa-As-e3g" firstAttribute="centerX" secondItem="nJN-th-c5K" secondAttribute="centerX" id="PYr-C7-Qa0"/>
+                                            <constraint firstAttribute="trailing" secondItem="1oa-As-e3g" secondAttribute="trailing" constant="20" id="Xc1-X3-MqP"/>
+                                            <constraint firstItem="1oa-As-e3g" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" constant="20" id="mR9-wS-aY6"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -133,6 +146,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="XLm-5r-pSP" id="HBS-Dp-s7W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
