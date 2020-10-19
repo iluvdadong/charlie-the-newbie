@@ -42,3 +42,22 @@ To Pass The Probation Period In DIO Successfully
 #### FRI/OCT/16
 #### - [1] [Study W/David](https://app.slack.com/docs/TM8RYJG4T/F01CMSAEA02)
    - [GraphQL Excercise](https://github.com/iluvdadong/charlie-the-newbie/tree/master/movieql)
+   - Bitbucket 사용 / 프로젝트 소스 클론
+   
+   
+#### MON/OCT/19
+#### - [2] Study W/David
+   - GraphQL 프로젝트 소스 실습
+     - [GraphGL API](https://velog.io/@ckstn0777/GraphQL-API-%EB%A7%8C%EB%93%A4%EA%B8%B0-12)
+   - 프로젝트 소스 디바이스에 빌드
+   - Postman - Server API확인
+   - DBeaver - Data 조회
+   - 그 외
+    - AppDelegate
+    - 생명주기
+    - if debug / else / endif
+    - 확장자 .ipa
+
+
+
+
