@@ -58,6 +58,12 @@ To Pass The Probation Period In DIO Successfully
     - if debug / else / endif
     - 확장자 .ipa
 
-
-
+#### TUE/OCT/20
+#### Networking, JSON Parsing, APIs and Core Location
+   - Learn to use the UITextField
+   - Swift Deep Dive] Protocols
+   - The Delegate Design Pattern
+   - An Example of Protocols and Delegates
+   - Understanding the OpenWeather API and URL Parameters
+   - Use the URLSession for Networking
 
