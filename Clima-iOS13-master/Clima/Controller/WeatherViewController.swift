@@ -42,5 +42,15 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        
+        //Unwarpped Optional
+        if let city = searchTextField.text {
+            weatherManager.fetchWeather(cityName: city)
+        }
+        
+        searchTextField.text = ""
+    }
+    
 }
 
