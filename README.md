@@ -69,11 +69,14 @@ To Pass The Probation Period In DIO Successfully
 
 #### WED/OCT/21
 #### Networking, JSON Parsing, APIs and Core Location
+   - [JSON Decoding](https://github.com/iluvdadong/charlie-the-newbie/tree/master/Clima-iOS13-master)
+   - [Create a WeatherModel and Understand Computed Properties](https://github.com/iluvdadong/charlie-the-newbie/tree/master/Clima-iOS13-master)
    - Closure
-   ```swift
-// 클로저 : Closures  / 고차함수 / MAP 이해하기
-// iOS App Development Course - 161. [Swfit Deep Dive] Closure
 
+ 클로저 : Closures  / 고차함수 / MAP 이해하기
+ iOS App Development Course - 161. [Swfit Deep Dive] Closure
+
+   ```swift
 import UIKit
 
 let array = [6,2,3,5,1]
@@ -83,17 +86,18 @@ func addOne(n1: Int) -> Int {
 }
 
 array.map(addOne) //[7,3,4,6,2]
+```
 
-// 고차함수 map으로 addOne함수를 사용해서 array 배열의 각 원소에 addOne함수를 적용시켜서 기존에 있던  array의 원소를 인자로 넣고 거기에 1을 더해서 반환하는 작업을 한 것임
-// - map은 컬렉션 내부의 기존 데이터를 변형해서 새로운 컬렉션을 생성하는 함수입니다.
-// - 내부의 자료에 변형을 가하기 위해 함수의 각 요소에 함수를 적용해서 새로운 컬렉션을 만들어줍니다.
-// - 잘 사용하면 for 문을 사용하지 않고도 작업할 수 있습니다.
+  고차함수 map으로 addOne함수를 사용해서 array 배열의 각 원소에 addOne함수를 적용시켜서 기존에 있던  array의 원소를 인자로 넣고 거기에 1을 더해서 반환하는 작업을 한 것임
+   - map은 컬렉션 내부의 기존 데이터를 변형해서 새로운 컬렉션을 생성하는 함수입니다.
+   - 내부의 자료에 변형을 가하기 위해 함수의 각 요소에 함수를 적용해서 새로운 컬렉션을 만들어줍니다.
+   - 잘 사용하면 for 문을 사용하지 않고도 작업할 수 있습니다.
  
 
-// 기존의 Function은 클로저의 한 형태로 이름있는 클로저임!
-// 그렇다면 기존의 function을 클로저의 또 다른 형태로 변환할 수 있다는 것!
+   기존의 Function은 클로저의 한 형태로 이름있는 클로저임!
+   그렇다면 기존의 function을 클로저의 또 다른 형태로 변환할 수 있다는 것!
  
-
+   ```swift
 import UIKit
 
 let array = [6,2,3,5,1]
@@ -121,10 +125,11 @@ array.map( {$0 + 1} )  //[7,3,4,6,2]
 // 괄호 생략 가능
 array.map{$0 + 1}  //[7,3,4,6,2] 단축인자이용
  
+   ```
 
+Array 배열을 스트링으로 변환하는 것도 단순하다
 
-// Array 배열을 스트링으로 변환하는 것도 단순하다
-
+   ```swift
 import UIKit
 
 let array = [6,2,3,5,1]
