@@ -6,7 +6,6 @@
 //  Copyright © 2020 App Brewery. All rights reserved.
 //
 
-
 import Foundation
 
 
@@ -36,25 +35,37 @@ struct WeatherManager {
             //3. Give the session a task
             //completionHandler: task가 하는 일 : go to url, grab the data, go across entire world and come back with data
             //completionHandler는 사실 function이다.
-            let task = session.dataTask(with: url, completionHandler: handle(data:response:error:))
-            
+            let task = session.dataTask(with: url) { (data, response, error) in
+                
+                //dataTask가 끝나면 실행될 클로저 function
+                if error != nil {
+                    print(error!)
+                    return //exit out of this function : (So if an error)
+                }
+                
+                if let safeData = data {
+                    // API로 받아온 데이터를 스위프트 오브젝트(propertires, methods)로 변경할 것임
+                    // 클로저 안에서는 self를 꼭 붙여야 한다.
+                    self.parseJSON(weatherData: safeData)
+                }
+            }
             //4. Start the task
             task.resume()
-            
         }
     }
     
-    func handle(data: Data?, response: URLResponse?, error: Error?) -> Void {
+    //
+    func parseJSON(weatherData: Data) {
         
-        if error != nil {
-            print(error!)
-            return //exit out of this function : (So if an error)
-        }
-        
-        if let safeData = data {
-            let dataString = String(data: safeData, encoding: .utf8)
-            print(dataString)
+        // Object that can decode JSON
+        let decoder = JSONDecoder()
+        do {
+           let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
+            print(decodedData.name)
+            print(decodedData.main.temp)
+            print(decodedData.weather[0].description)
+        } catch {
+            print(error)
         }
     }
-       
 }
