@@ -26,6 +26,7 @@ struct Main: Decodable {
 
 // weather 아이템의 array다. weather안에 array가 있음
 struct Weather: Decodable {
-    let main: String
+    // let main: String
     let description: String
+    let id: Int
 }
