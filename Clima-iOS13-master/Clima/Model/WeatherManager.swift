@@ -8,11 +8,16 @@
 
 import Foundation
 
+protocol WeatherManagerDelegate {
+    func didUpdateWeather(weather: WeatherModel)
+}
 
 struct WeatherManager {
     
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=314b688978b9c25763965b124d4d6d43&units=metric"
     //&q=seoul
+    
+    var delegate: WeatherManagerDelegate?
     
     //API 활용을 위한 URL 만들어주기
     func fetchWeather(cityName: String) {
@@ -42,11 +47,12 @@ struct WeatherManager {
                     print(error!)
                     return //exit out of this function : (So if an error)
                 }
-                
+                // API로 받아온 데이터를 스위프트 오브젝트(propertires, methods)로 변경할 것임
+                // 클로저 안에서는 self를 꼭 붙여야 한다.
                 if let safeData = data {
-                    // API로 받아온 데이터를 스위프트 오브젝트(propertires, methods)로 변경할 것임
-                    // 클로저 안에서는 self를 꼭 붙여야 한다.
-                    self.parseJSON(weatherData: safeData)
+                    if let weather = self.parseJSON(weatherData: safeData) {
+                        self.delegate?.didUpdateWeather(weather: weather)
+                    }
                 }
             }
             //4. Start the task
@@ -55,7 +61,7 @@ struct WeatherManager {
     }
     
     //
-    func parseJSON(weatherData: Data) {
+    func parseJSON(weatherData: Data) -> WeatherModel? {
         
         // Object that can decode JSON
         let decoder = JSONDecoder()
@@ -73,6 +79,7 @@ struct WeatherManager {
             
         } catch {
             print(error)
+            return weather
         }
     }
     
