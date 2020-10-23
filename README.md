@@ -139,3 +139,13 @@ let stringArray   = array.map{"\($0)"}
 print(stringArray) //["6", "2", "3", "5", "1"]
  
   ``` 
+
+
+#### THU/OCT/22
+#### Networking, JSON Parsing, APIs and Core Location
+   - Internal and External Parameter Names
+   - Method Naming Conventions and Error Handling
+   - Updating the UI by Using the DispatchQueue
+   - Using Extensions to Refactor the ViewController
+   - Using CoreLocation to get Location Data
+   - Property List (.plist)?
