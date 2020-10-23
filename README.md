@@ -50,8 +50,6 @@ To Pass The Probation Period In DIO Successfully
    - GraphQL 프로젝트 소스 실습
      - [GraphGL API](https://velog.io/@ckstn0777/GraphQL-API-%EB%A7%8C%EB%93%A4%EA%B8%B0-12)
    - 프로젝트 소스 디바이스에 빌드
-   - Postman - Server API확인
-   - DBeaver - Data 조회
    - 그 외
     - AppDelegate
     - 생명주기
